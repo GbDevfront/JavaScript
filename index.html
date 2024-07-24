@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Lanches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Venda de Lanches</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Bem-vindo à nossa Lanchonete</h2>
+            <p>Os melhores lanches da região, feitos com ingredientes frescos e de qualidade.</p>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Nosso Menu</h2>
+            <div class="menu-grid">
+                <div class="card">
+                    <img src="hamburguer.jpg" alt="Hambúrguer">
+                    <h3>Hambúrguer</h3>
+                    <p>Delicioso hambúrguer artesanal.</p>
+                    <button onclick="adicionarAoCarrinho('Hambúrguer')">Adicionar ao carrinho</button>
+                </div>
+                <div class="card">
+                    <img src="batata.jpg" alt="Batata Frita">
+                    <h3>Batata Frita</h3>
+                    <p>Batatas fritas crocantes.</p>
+                    <button onclick="adicionarAoCarrinho('Batata Frita')">Adicionar ao carrinho</button>
+                </div>
+                <div class="card">
+                    <img src="refrigerante.jpg" alt="Refrigerante">
+                    <h3>Refrigerante</h3>
+                    <p>Refrigerante gelado.</p>
+                    <button onclick="adicionarAoCarrinho('Refrigerante')">Adicionar ao carrinho</button>
+                </div>
+            </div>
+            <button class="toggle-sidebar" onclick="toggleSidebar()">Ver mais opções</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Email: contato@lanchonete.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Lanchonete. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="sidebar" id="sidebar">
+        <button class="closebtn" onclick="toggleSidebar()">×</button>
+        <div class="sidebar-content">
+            <h3>Mais Opções</h3>
+            <div class="card">
+                <img src="pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Pizza deliciosa com diversos sabores.</p>
+                <button onclick="adicionarAoCarrinho('Pizza')">Adicionar ao carrinho</button>
+            </div>
+            <div class="card">
+                <img src="sanduiche.jpg" alt="Sanduíche">
+                <h3>Sanduíche</h3>
+                <p>Sanduíche fresco e saudável.</p>
+                <button onclick="adicionarAoCarrinho('Sanduíche')">Adicionar ao carrinho</button>
+            </div>
+            <div class="card">
+                <img src="suco.jpg" alt="Suco">
+                <h3>Suco</h3>
+                <p>Suco natural de frutas.</p>
+                <button onclick="adicionarAoCarrinho('Suco')">Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
